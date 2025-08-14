@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="1ATBybTS81DpIcTNhqmKgFo5Hap6gGnLN">
+	<name>campus IIT DELHI</name>
+	<gx:CascadingStyle kml:id="__managed_style_15A643CE2E3987342BD8">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_00A1AC8FB73987342BD8">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_15A643CE2E3987342BD8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_03F585EE973987342BDB</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_124DB8DA8139873977F4">
+		<Style>
+			<IconStyle>
+				<scale>0.75</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_23D6C96E0E39873977F4">
+		<Style>
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0E5398DD8639873977F4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_124DB8DA8139873977F4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_23D6C96E0E39873977F4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_239091DDBE398721E1DC">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/simple_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1D005ACD21398721E1DC">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/simple_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_03F585EE973987342BDB">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0BFDD61071398721E1DC">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1D005ACD21398721E1DC</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_239091DDBE398721E1DC</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="05B8D145FA3987217784">
+		<name>Untitled polygon</name>
+		<LookAt>
+			<longitude>77.27172610762922</longitude>
+			<latitude>28.54702038164464</latitude>
+			<altitude>241.3620699082151</altitude>
+			<heading>58.21325101457944</heading>
+			<tilt>38.50092522756615</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1236.99941765779</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0BFDD61071398721E1DC</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						77.27002464249242,28.54632407959125,0 77.26993361378035,28.54404285222745,0 77.27238137290367,28.5432732823276,0 77.27453992188458,28.54834390153158,0 77.27427025087756,28.54882785585467,0 77.27348252322176,28.54840098919642,0 77.27002464249242,28.54632407959125,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="04BA5149AF3987342BC1">
+		<name>Academic</name>
+		<LookAt>
+			<longitude>77.27244811870975</longitude>
+			<latitude>28.54423035176889</latitude>
+			<altitude>244.6195166973509</altitude>
+			<heading>58.21222034401675</heading>
+			<tilt>38.4972558367137</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>581.640465277451</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0E5398DD8639873977F4</styleUrl>
+		<Point>
+			<coordinates>77.27172469350236,28.54387192073229,249.7956624971879</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="01D568345B398734DC87">
+		<name>Lecture </name>
+		<LookAt>
+			<longitude>77.27296031053011</longitude>
+			<latitude>28.54507069436093</latitude>
+			<altitude>244.7366478150152</altitude>
+			<heading>58.21140235263694</heading>
+			<tilt>38.49501810831971</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>181.863844592408</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_00A1AC8FB73987342BD8</styleUrl>
+		<Point>
+			<coordinates>77.27310430144938,28.54539451114374,244.9522274354402</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0D2189927F39873525D7">
+		<name>Dinnig</name>
+		<LookAt>
+			<longitude>77.27331679105797</longitude>
+			<latitude>28.546070429405</latitude>
+			<altitude>244.6283967777902</altitude>
+			<heading>58.21142310757997</heading>
+			<tilt>38.4946816371059</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>121.7523002784583</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_00A1AC8FB73987342BD8</styleUrl>
+		<Point>
+			<coordinates>77.27320362817805,28.54624558975327,243.3427022088236</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="08478C25E8398735AD0F">
+		<name>Boys main</name>
+		<LookAt>
+			<longitude>77.27389805277126</longitude>
+			<latitude>28.54734889212186</latitude>
+			<altitude>244.5143156434875</altitude>
+			<heading>58.2116498662526</heading>
+			<tilt>38.49560136687543</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>286.0646528020879</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_00A1AC8FB73987342BD8</styleUrl>
+		<Point>
+			<coordinates>77.27404500438536,28.54797346963259,243.2344441351374</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0D91622F09398735EC7B">
+		<name>OLD Boys H </name>
+		<LookAt>
+			<longitude>77.27389805277126</longitude>
+			<latitude>28.54734889212186</latitude>
+			<altitude>244.5143156434875</altitude>
+			<heading>58.2116498662526</heading>
+			<tilt>38.49560136687543</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>286.0646528020879</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_00A1AC8FB73987342BD8</styleUrl>
+		<Point>
+			<coordinates>77.27378135161365,28.54768463224431,241.6001996649467</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0DE2FBE14E3987362D61">
+		<name>OLD GIRLS H</name>
+		<LookAt>
+			<longitude>77.27369874489506</longitude>
+			<latitude>28.54738486218946</latitude>
+			<altitude>243.1716298474765</altitude>
+			<heading>58.2111958288405</heading>
+			<tilt>38.49461944571171</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>110.6416081181669</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_00A1AC8FB73987342BD8</styleUrl>
+		<Point>
+			<coordinates>77.27369406573786,28.54740250008868,241.7426433367967</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="09C958FE9239873686AF">
+		<name>Girls main</name>
+		<LookAt>
+			<longitude>77.27379207164557</longitude>
+			<latitude>28.54745030681421</latitude>
+			<altitude>242.5694154884287</altitude>
+			<heading>58.21188945480153</heading>
+			<tilt>38.49611954100592</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>378.6378156753563</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_00A1AC8FB73987342BD8</styleUrl>
+		<Point>
+			<coordinates>77.27362583405487,28.54688821231527,246.9662530094497</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="004FCFA47D398736DB63">
+		<name>Library</name>
+		<LookAt>
+			<longitude>77.27227263595378</longitude>
+			<latitude>28.54436273838035</latitude>
+			<altitude>241.9678908610126</altitude>
+			<heading>58.21023315013235</heading>
+			<tilt>38.4951721595012</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>209.3854359793841</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_00A1AC8FB73987342BD8</styleUrl>
+		<Point>
+			<coordinates>77.27247519021506,28.54390378541783,249.821834557789</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

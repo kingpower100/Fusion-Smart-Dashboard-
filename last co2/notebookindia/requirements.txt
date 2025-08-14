@@ -1,0 +1,39 @@
+# 🚀 Fusion Smart Dashboard - Dépendances Python
+# Installation : pip install -r requirements.txt
+
+# === STREAMLIT & INTERFACE ===
+streamlit>=1.28.0
+streamlit-folium>=0.13.0
+
+# === DATA SCIENCE & ANALYTICS ===
+pandas>=1.5.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+plotly>=5.0.0
+scipy>=1.9.0
+
+# === MACHINE LEARNING & AI ===
+faiss-cpu>=1.7.0
+sentence-transformers>=2.2.0
+transformers>=4.20.0
+torch>=1.12.0
+tf-keras>=2.12.0
+
+# === GEOSPATIAL & MAPPING ===
+folium>=0.14.0
+geopandas>=0.12.0
+shapely>=1.8.0
+
+# === UTILITIES ===
+python-dotenv>=0.19.0
+requests>=2.28.0
+pytz>=2022.1
+Pillow>=9.0.0
+
+# === OPTIONAL - Performance ===
+# joblib>=1.1.0
+# psutil>=5.9.0
+
+# === VERSIONS TESTÉES ===
+# Python 3.8-3.12
+# Windows 10/11, macOS 10.15+, Ubuntu 18.04+

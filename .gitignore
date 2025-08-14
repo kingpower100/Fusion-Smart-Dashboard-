@@ -1,0 +1,112 @@
+# 🚀 Fusion Smart Dashboard - Git Ignore
+
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# === VENV ===
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# === STREAMLIT ===
+.streamlit/secrets.toml
+.streamlit/cache/
+
+# === DATA & MODELS ===
+*.csv
+*.xlsx
+*.xls
+*.db
+*.sqlite
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.model
+*.bin
+
+# === LOGS ===
+*.log
+logs/
+log/
+
+# === TEMP FILES ===
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# === OS FILES ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === JUPYTER ===
+.ipynb_checkpoints/
+*.ipynb
+
+# === ENVIRONMENT ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === BACKUP ===
+*.bak
+*.backup
+*.old
+
+# === CACHE ===
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# === FAISS INDEXES (Large files) ===
+# Uncomment if you want to ignore FAISS indexes
+# *.faiss
+# rag/faiss_index/
+
+# === CUSTOM ===
+# Add your custom ignore patterns here
+EMB_MODEL=sentence-transformers/all-MiniLM-L6-v2
+FAISS_INDEX=rag/faiss_index/index_all.faiss
+CHUNKS_PATH=rag/faiss_index/chunks_all.txt
+META_PATH=rag/faiss_index/metadata_all.json
+OLLAMA_URL=http://localhost:11434/api/generate
+OLLAMA_MODEL=mistral
+TOP_K=5

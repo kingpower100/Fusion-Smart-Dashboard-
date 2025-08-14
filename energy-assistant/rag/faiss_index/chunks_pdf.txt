@@ -1,0 +1,387 @@
+Surveillance ´Energ´ etique et Empreinte Carbone du Campus IIT
+Delhi
+Tableau de Bord en Temps R´ eel
+August 12, 2025
+1 Introduction
+L’IIT Delhi est un campus universitaire de pointe situ´ e au cœur de New Delhi, int´ egrant de nombreux
+bˆ atiments acad´ emiques, r´ esidentiels et de recherche. Grˆ ace ` a ce tableau de bord, nous surveillons en
+temps r´ eel la consommation ´ energ´ etique et l’empreinte carbone de ses principales infrastructures. Le jeu
+de donn´ ees couvre la consommation ´ energ´ etique horaire et les indicateurs de pr´ esence dans les bˆ atiments
+principaux du campus. Les bˆ atiments sont aliment´ es par trois transformateurs ´ electriques, chacun desser-
+vant un sous-ensemble d’infrastructures.
+2 Description des Variables
+•Taille de data set
+•P´ eriode : 2017-01-01 →201
+7-11-03
+•Lignes : 7,357
+2.1 Variables Temporelles
+•timestamp : Date et heure de la mesure (format YYYY-MM-DD HH:MM:SS), granularit´ e horaire.
+•hour, dayofweek, month : Variables d´ eriv´ ees pour l’analyse des patterns journaliers, hebdo-
+madaires et saisonniers.
+•working day: Indicateur binaire (1 = jour ouvr´ e, 0 = week-end ou jour f´ eri´ e).
+•activity : Code du niveau d’activit´ e dans le bˆ atiment (ex. L = faible, M = moyen, H = ´ elev´ e).
+2.2 Variables de Pr´ esence
+Ces variables repr´ esentent le nombre de personnes pr´ esentes dans chaque bˆ atiment ou zone au moment
+de la mesure :
+•ACB— Academic Building
+•BH— Boys Hostel
+•DB— Dining Building
+•GH— Girls Hostel
+•LB— Lecture Building
+•LCB— Library & Central Building
+•SRB— Facilties Building
+1
+2.3 Variables de Consommation par Tra
+nsformateur
+•transformer 1kwh:´Energie consomm´ ee par le Transformateur 1.
+•transformer 2kwh:´Energie consomm´ ee par le Transformateur 2.
+•transformer 3kwh:´Energie consomm´ ee par le Transformateur 3.
+2.4 Variables de Consommation par Bˆ atiment/Secteur
+•BHpowkwh, BH bacpowkwh: Puissance horaire (kWh) du Boys Hostel et de son alimentation de
+secours.
+•SRBpowkwh: Puissance horaire du Facilties Building.
+•GHpowkwh, GH bacpowkwh: Puissance horaire du Girls Hostel et de son alimentation de secours.
+•LCBpowkwh: Puissance horaire de la Library Building.
+•LBpowkwh: Puissance horaire du Lecture Building.
+•DBpowkwh: Puissance horaire du Dining Building.
+2.5 Variables Globales
+•electricity kwh: Consommation ´ electrique totale horaire (tous transformateurs confondus).
+•CO2total :´Emissions totale
+s de CO associ´ ees (gCO).
+•temperature, humidity : Conditions m´ et´ eorologiques ext´ erieures mesur´ ees ` a proximit´ e ( °C, %).
+3 Lien Transformateurs ↔Bˆatiments
+Le tableau ci-dessous d´ etaille la r´ epartition des bˆ atiments aliment´ es par chaque transformateur, d’apr` es
+le sch´ ema fourni.
+Table 1: Correspondance entre les transformateurs et les bˆ atiments desservis
+Transformateur Bˆ atiments / Secteurs Desservis
+Transformateur 1 Dining
+Transformateur 2 Academic, Library, Facilities, Lecture,
+OLD Boys main, OLD Girls main
+Transformateur 3 Boys main, Girls main
+4 Consommation Quotidienne Totale (kWh/jour)
+Analyse de la consommation quotidienne totale en kWh/jour sur la p´ eriode de janvier ` a novembre 2017.
+4.1 Variabilit´ e saisonni` ere marqu´ ee
+•Hiver (janv-f´ ev) : Nivea
+ux mod´ er´ es autour de 6 000–8 000 kWh/jour.
+•Printemps (mars-avril) : Baisse temporaire vers 3 000–5 000 kWh/jour.
+•´Et´ e (juin-aoˆ ut) : Nette augmentation, avec des pics sup´ erieurs ` a 14 000 kWh/jour.
+•Automne (sept-oct) : Consommation encore ´ elev´ ee mais plus instale, puis baisse progressive.
+2
+4.2 Pics notables
+•Mi-juillet : Point le plus haut (environ 14 800 kWh/jour) →probablement li´ e ` a une forte demande
+climatique (climatisation).
+•Plusieurs ´ episodes de surconsommation en aoˆ ut et septembre.
+4.3 P´ eriodes basses
+•Mars et fin octobre-d´ ebut novembre : Chutes nettes, peut-ˆ etre li´ ees ` a des vacances ou une
+baisse d’activit´ e.
+4.4 Interpr´ etations possibles
+•Influence climatique : La hausse estivale correspond sans doute ` a un usage accru de la climati-
+sation
+.
+•Calendrier acad´ emique : Les creux pourraient correspondre ` a des p´ eriodes de vacances univer-
+sitaires ou ` a une activit´ e r´ eduite.
+•Anomalies ` a investiguer : Certains pics abrupts m´ eriteraient d’ˆ etre crois´ es avec les donn´ ees
+m´ et´ eo et d’occupation pour v´ erifier s’ils sont normaux.
+5 R´ epartition de l’ ´Energie par Transformateur
+Analyse de la r´ epartition de l’´ energie consomm´ ee (kWh total) entre les trois transformateurs sur la
+p´ eriode analys´ ee.
+5.1 Observations principales
+•Transformateur 2 est de loin le plus sollicit´ e, avec plus d’1,08 million de kWh consomm´ es, soit
+probablement la charge principale du campus.
+•Cela correspond au fait qu’il alimente plusieurs bˆ atiments gourmands : Academic, Library, Facili-
+ties, Lecture, OLD Boys main, OLD Gi
+rls main.
+•Transformateur 3 arrive en deuxi` eme position avec environ 640 000 kWh, alimentant Boys main
+et Girls main.
+•Transformateur 1 affiche la plus faible consommation (environ 490 000 kWh), ce qui est coh´ erent
+s’il n’alimente que le bˆ atiment Dining.
+5.2 Interpr´ etations possibles
+•R´ epartition in´ egale de la charge : Le T2 supporte une part disproportionn´ ee de la demande
+´ energ´ etique →risque de surcharge ou de pertes accrues.
+•Optimisation possible : Une redistribution des charges vers T1 et T3 pourrait am´ eliorer l’efficacit´ e
+et prolonger la dur´ ee de vie des ´ equipements.
+•Lien avec les pics de consommation : Les jours de forte demande (´ et´ e), T2 doit absorber la
+majorit´ e de la charge →` a surveiller pour ´ eviter les d´ epassements de capacit´ e.
+6 Consommat
+ion Mensuelle Totale
+Analyse de la consommation totale d’´ electricit´ e par mois sur l’ann´ ee 2017.
+3
+6.1 Observations principales
+•Tendance g´ en´ erale :
+–Baisse en d´ ebut d’ann´ ee : janvier (env. 200 000 kWh) →f´ evrier (env. 123 000 kWh).
+–Remont´ ee progressive de mars ` a juin (env. 230 000 kWh).
+–Pic estival : juillet (env. 302 000 kWh) et aoˆ ut (env. 319 000 kWh) →plus forte demande
+annuelle.
+–Recul en automne : septembre (env. 252 000 kWh) →octobre (env. 193 000 kWh) →chute
+drastique en novembre (env. 12 000 kWh).
+•Point culminant : Aoˆ ut, avec plus de 319 000 kWh, probablement dˆ u ` a la climatisation intensive
+et ` a une activit´ e ´ elev´ ee sur le campus.
+•Baisse importante en novembre : Peut indiquer un manque de donn´ ees pour ce mois ou une
+p´ eriode de fermeture/vac
+ances prolong´ ee.
+6.2 Interpr´ etations possibles
+•Impact climatique : Les mois chauds (juillet-aoˆ ut) co¨ ıncident avec une forte hausse de la con-
+sommation →climatisation principale cause.
+•Effet calendrier : La chute en novembre pourrait refl´ eter une interruption d’activit´ e (vacances
+ou maintenance).
+•Optimisation : Une gestion plus efficace de la climatisation et des syst` emes ´ energ´ etiques en ´ et´ e
+pourrait r´ eduire ces pics.
+7 Cycle Journalier Typique (Moyenne Horaire)
+Analyse de la moyenne horaire de la consommation ´ electrique (kWh) sur l’ensemble de la p´ eriode,
+permettant d’identifier les cycles journaliers typiques.
+7.1 Observations principales
+•Deux pics majeurs :
+– Matin´ ee : Entre 2h et 5h, consommation stable autour de 320–325 kWh, probablement li´ ee
+aux sy
+st` emes fonctionnant en continu.
+– Apr` es-midi : Pic maximal ` a 15h (environ 340 kWh), moment de forte activit´ e humaine et
+climatique.
+•Creux marqu´ e :
+–Vers 9h, consommation minimale (environ 245 kWh), ce qui est atypique pour une activit´ e
+diurne.
+•Baisse progressive en soir´ ee :
+–Apr` es 18h, la consommation diminue r´ eguli` erement pour atteindre environ 260 kWh vers
+22h–23h.
+7.2 Interpr´ etations possibles
+•Pic de l’apr` es-midi : Probablement caus´ e par la combinaison d’activit´ e intense et de la climati-
+sation aux heures les plus chaudes.
+•Consommation nocturne ´ elev´ ee : Pr´ esence d’´ equipements critiques fonctionnant 24/7 →po-
+tentiel d’optimisation.
+•Creux matinal :`A analyser plus finement, car inhabituel dans un contexte acad´ emique classique.
+4
+8 Cycle Hebdoma
+daire (Moyenne Quotidienne)
+Analyse de la moyenne quotidienne de consommation ´ electrique (kWh) en fonction du jour de la semaine
+(0 = lundi).
+8.1 Observations principales
+•Consommation la plus ´ elev´ ee : Lundi (0) et Samedi (5), avec environ 323–324 kWh.
+•Baisse progressive en milieu de semaine : De mardi (1) ` a jeudi (4), la consommation diminue
+pour atteindre un minimum le jeudi (environ 255 kWh), soit une baisse d’environ 20 % par rapport
+au lundi.
+•Remont´ ee nette le samedi : Apr` es le creux du jeudi, forte reprise le samedi, puis l´ eg` ere baisse
+le dimanche (6).
+8.2 Interpr´ etations possibles
+•Cycle d’activit´ e particulier : Le sch´ ema ne correspond pas ` a un simple cycle “lundi-vendredi”
+classique.
+•Jeudi creux : Pourrait correspondre ` a un jour avec peu de cours/activi
+t´ es sur le campus, ou ` a
+une maintenance r´ eguli` ere.
+•Consommation week-end : La baisse relative le dimanche indique une activit´ e r´ eduite, mais
+pas un arrˆ et complet.
+9 Consommation ´Electrique vs. Temp´ erature Ext´ erieure
+Analyse de la relation entre la consommation moyenne d’´ electricit´ e (kWh) et la temp´ erature ext´ erieure
+(°C).
+9.1 Observations principales
+•Profil en ”U” marqu´ e : La relation suit une courbe caract´ eristique.
+•Temp´ eratures basses ( <10℃): Consommation ´ elev´ ee (environ 320–380 kWh), li´ ee au chauffage
+ou ` a la compensation thermique.
+•Zone de confort thermique (14–20 ℃): Consommation minimale (environ 180–200 kWh),
+p´ eriode o` u ni chauffage ni climatisation ne sont fortement sollicit´ es.
+•Temp´ eratures ´ elev´ ees ( >28℃): Consommation rep
+art ` a la hausse (environ 350–450 kWh),
+due au recours accru ` a la climatisation.
+•Variabilit´ e importante aux extrˆ emes : La dispersion est plus forte ` a basse temp´ erature ( <
+8℃) et tr` es haute temp´ erature ( >40℃), sugg´ erant des pics li´ es ` a des ´ ev´ enements ponctuels.
+9.2 Interpr´ etations possibles
+•Sensibilit´ e climatique : La demande ´ energ´ etique augmente aux extrˆ emes de temp´ erature, con-
+firmant l’influence directe de la m´ et´ eo.
+•Zone d’optimisation : Autour de 15–20 ℃, la consommation est naturellement basse. Viser cette
+plage int´ erieure via une meilleure isolation ou un contrˆ ole climatique intelligent est une strat´ egie
+cl´ e.
+•Potentiel d’analyse : Croiser ces donn´ ees avec l’occupation pourrait affiner l’explication des pics
+de variabilit´ e.
+5
+
+10 Consommation ´Electrique vs. Taux d’Humidit´ e
+Analyse de la consommation moyenne d’´ electricit´ e (kWh) en fonction du taux d’humidit´ e (%).
+10.1 Observations principales
+•Consommation ´ elev´ ee ` a faible humidit´ e : Pour des niveaux inf´ erieurs ` a 20 %, la consommation
+est particuli` erement haute (environ 360–400 kWh).
+•Zone basse (30–50 % d’humidit´ e) : Consommation moyenne la plus faible (environ 250–280
+kWh), correspondant ` a des conditions climatiques mod´ er´ ees.
+•Remont´ ee ` a forte humidit´ e ( >70 %) : Augmentation progressive de la consommation (environ
+320–350 kWh), probablement due ` a la climatisation/d´ eshumidification.
+10.2 Interpr´ etations possibles
+•Forme en ”U” similaire ` a la temp´ erature : Consommation minimale dans une zone de confort
+(30–50 %), plu
+s ´ elev´ ee aux extrˆ emes.
+•Impact climatique double :`A faible ou forte humidit´ e, les syst` emes de traitement de l’air
+travaillent davantage, augmentant la demande ´ energ´ etique.
+•Opportunit´ es d’optimisation : Ajuster les consignes de CVC (Chauffage, Ventilation, Climati-
+sation) pour limiter la consommation dans ces zones extrˆ emes.
+11 Empreinte Carbone Totale Mensuelle (2017)
+Analyse de l’empreinte carbone totale mensuelle (en kg de CO) pour l’ann´ ee 2017.
+11.1 Observations principales
+•Tendance similaire ` a la consommation : Les variations suivent la mˆ eme courbe que la con-
+sommation d’´ electricit´ e, le CO ´ etant calcul´ e via un facteur d’´ emission fixe.
+•P´ eriodes de forte empreinte : Juillet (environ 250 000 kg CO) et aoˆ ut (environ 260 000 kg CO)
+sont les mois l
+es plus ´ emetteurs, en lien avec l’usage de la climatisation.
+•P´ eriodes de faible empreinte : F´ evrier (environ 100 000 kg CO) et novembre (environ 10 000
+kg CO) enregistrent les valeurs les plus basses.
+11.2 Interpr´ etations possibles
+•Lien direct ´ energie–´ emissions : Toute strat´ egie de r´ eduction de la consommation ´ electrique
+aura un impact proportionnel sur l’empreinte carbone.
+•Optimisation climatique prioritaire : Une meilleure gestion de la climatisation en ´ et´ e est la
+piste principale pour r´ eduire les ´ emissions.
+12 Corr´ elation Empreinte Carbone vs. Occupation Moyenne
+Analyse crois´ ee de l’empreinte carbone totale (kg de CO) et de l’occupation moyenne (nombre de per-
+sonnes) par mois.
+6
+12.1 Observations principales
+•Corr´ elation partielle : De mars ` a aoˆ ut
+, l’augmentation de l’occupation est globalement suivie
+par une hausse de l’empreinte carbone.
+•P´ eriodes synchrones : Juillet et aoˆ ut montrent des pics simultan´ es d’occupation et de CO.
+•Divergences notables : En novembre, l’occupation est tr` es ´ elev´ ee mais l’empreinte carbone est
+faible.
+12.2 Interpr´ etations possibles
+•Facteurs combin´ es : L’occupation est un facteur cl´ e, mais la m´ et´ eo et les usages des ´ equipements
+jouent un rˆ ole tout aussi important.
+•D´ ecorr´ elations ` a investiguer : Les ´ ecarts entre occupation et CO m´ eritent d’ˆ etre ´ etudi´ es pour
+identifier des marges d’optimisation ou des anomalies de donn´ ees.
+13 Corr´ elation Empreinte Carbone vs. Temp´ erature Moyenne
+Analyse crois´ ee de l’empreinte carbone totale (kg de CO) et de la temp´ eratu
+re moyenne mensuelle ( °C).
+13.1 Observations principales
+•Lien fort en ´ et´ e : De mai ` a aoˆ ut, la temp´ erature moyenne ´ elev´ ee ( >30℃) co¨ ıncide avec une
+empreinte carbone tr` es importante ( >200 000 kg CO).
+•D´ ecalage au printemps : Entre avril et juin, la temp´ erature augmente fortement mais l’empreinte
+carbone ne monte que progressivement.
+•Baisse automnale synchronis´ ee : De septembre ` a novembre, la temp´ erature et le CO diminuent
+ensemble.
+•Exception hivernale : En janvier et f´ evrier, les temp´ eratures basses co¨ ıncident avec une empreinte
+carbone relativement ´ elev´ ee, sugg´ erant un recours au chauffage.
+13.2 Interpr´ etations possibles
+•Corr´ elation dominante temp´ erature–CO : Les mois les plus chauds entraˆ ınent les plus fortes
+´ emissions, confirmant le
+ rˆ ole majeur de la climatisation.
+•Optimisation du refroidissement : Agir sur l’efficacit´ e du refroidissement est la strat´ egie la
+plus impactante pour r´ eduire l’empreinte carbone estivale.
+14 D´ etection d’Anomalies de Consommation
+Analyse des anomalies de consommation pour chaque bˆ atiment en fonction du nombre de personnes
+pr´ esentes et de la consommation ´ electrique (kWh). Les anomalies (points rouges) indiquent des com-
+portements de consommation atypiques par rapport ` a la norme (points bleus).
+14.1 BH — Boys Hostel
+14.1.1 Observations principales
+•Anomalies ` a faible occupation (0–20 personnes) : Plusieurs points ` a consommation ´ elev´ ee
+(>35–40 kWh) alors que peu ou pas de personnes sont pr´ esentes, sugg´ erant des ´ equipements laiss´ es
+allum´ es inutilement.
+•Ano
+malies ` a occupation ´ elev´ ee ( >500 personnes) : Quelques points ` a consommation basse
+par rapport ` a l’occupation, indiquant un possible dysfonctionnement d’´ equipements ou des relev´ es
+incomplets.
+7
+•Anomalies ` a occupation moyenne (100–400 personnes) : Points au-dessus de 40–50 kWh,
+marquant une surconsommation ponctuelle (´ ev´ enements sp´ eciaux, probl` emes techniques).
+14.1.2 Interpr´ etations possibles
+•Surconsommation hors horaires d’usage : D´ etect´ ee lorsque l’occupation est tr` es faible mais
+la consommation reste haute.
+•Sous-consommation anormale : D´ etect´ ee quand beaucoup de personnes sont pr´ esentes mais la
+consommation est inhabituellement basse (d´ efaillance ou coupure).
+•Besoins d’optimisation : Ce type de graphique permet de cibler les plages horaires o
+u journ´ ees
+` a investiguer pour comprendre la cause des anomalies.
+14.2 SRB — Student Recreation Block
+•Contexte : Faible capacit´ e ( 25 personnes), consommation mod´ er´ ee.
+14.2.1 Observations
+•Les anomalies sont pr´ esentes sur toute la plage d’occupation, mais plus fr´ equentes aux extrˆ emes.
+•Faible occupation (0–2 personnes) : Certaines consommations anormalement ´ elev´ ees ( >20
+kWh) indiquent des ´ equipements laiss´ es en marche hors utilisation.
+•Occupation >15 personnes : Quelques valeurs atypiquement basses par rapport au niveau
+d’occupation.
+14.2.2 Interpr´ etation
+•Surconsommations hors usage effectif ` a faible occupation.
+•Sous-consommations potentielles ` a forte occupation, pouvant indiquer un capteur d´ efectueux.
+14.3 GH — Girls Hostel
+•Contexte : Capacit´ e ´ elev
+´ ee (jusqu’` a 200 personnes), consommation moyenne plus faible ( 8–12
+kWh).
+14.3.1 Observations
+•Faible occupation (0–5 personnes) : Anomalies avec consommation relativement ´ elev´ ee ( >12
+kWh), indicateur d’´ equipements communs toujours actifs.
+•Forte occupation ( >180 personnes) : Anomalies avec consommation anormalement basse,
+sugg´ erant un risque de sous-alimentation ou un relev´ e incomplet.
+14.3.2 Interpr´ etation
+•Pr´ esence d’une consommation de base importante, ind´ ependamment du nombre d’occupants.
+•N´ ecessit´ e de v´ erifier les p´ eriodes de forte occupation o` u la consommation ne suit pas la tendance
+attendue.
+14.4 LCB — Lecture & Classroom Block
+•Contexte : Tr` es forte capacit´ e ( >400 personnes) mais consommation moyenne tr` es faible ( <5
+kWh).
+8
+14.4.1 Observati
+ons
+•Grand nombre d’anomalies mˆ eme ` a faible occupation, avec des consommations tr` es ´ elev´ ees ( >20
+kWh) par rapport au profil normal.
+•La majorit´ e des points normaux se situe en dessous de 5 kWh, montrant une faible consommation
+de base.
+•Anomalies dispers´ ees, sugg´ erant l’activation ponctuelle d’´ equipements gourmands (climatisation,
+´ eclairage intensif).
+14.4.2 Interpr´ etation
+•Surconsommations isol´ ees probablement dues ` a des ´ ev´ enements sp´ ecifiques (cours sp´ eciaux, conf´ erences).
+•´Ecart important entre la consommation de base et les pics d´ etect´ es.
+14.5 LB — Library Block
+•Contexte : Capacit´ e >400 personnes, consommation moyenne mod´ er´ ee (5–30 kWh).
+14.5.1 Observations
+•Profil triangulaire : Plus l’occupation augmente, plus la plage de consommation 
+diminue.
+•Anomalies principales :
+–`A faible occupation ( <50 personnes) avec consommation maximale ( >25 kWh).
+–`A occupation ´ elev´ ee ( >300 personnes) avec consommation anormalement basse.
+14.5.2 Interpr´ etation
+•Surconsommations hors horaires d’affluence.
+•Possible sous-utilisation ´ energ´ etique lors des pics d’occupation.
+14.6 DB — Dining Block
+•Contexte : Capacit´ e 300 personnes, consommation moyenne ´ elev´ ee (10–50 kWh).
+14.6.1 Observations
+•Forte densit´ e d’anomalies aux extrˆ emes :
+–Surconsommations >50 kWh pour une occupation faible ( <50 personnes).
+–Sous-consommations pour une forte occupation ( >200 personnes).
+•Consommation normale concentr´ ee entre 20 et 40 kWh pour une occupation de 50–150 personnes.
+14.6.2 Interpr´ etation
+•Consommation de base ´ elev´ ee (cuisi
+ne, r´ efrig´ eration) mˆ eme sans affluence.
+•Risque de sous-performance ´ energ´ etique en p´ eriode de service complet.
+15 Pr´ esentation du Syst` eme
+Afin d’aider ` a la prise de d´ ecision et ` a la r´ eduction de l’empreinte carbone des bˆ atiments, un moteur de
+recommandations contextuelles a ´ et´ e mis en place. Ce moteur analyse, pour chaque enregistrement de
+donn´ ees, diff´ erents indicateurs tels que la consommation d’´ electricit´ e, le niveau de CO, la temp´ erature,
+l’humidit´ e, l’occupation et la classification en clusters.
+9
+16 Logique de Recommandation Automatis´ ee
+Les recommandations sont g´ en´ er´ ees automatiquement en fonction d’un ensemble de r` egles pr´ ed´ efinies,
+con¸ cues pour identifier les opportunit´ es d’optimisation les plus courantes.
+16.1 CO ´ elev´ 
+e
+Si le CO total d´ epasse 1000 kg, le syst` eme sugg` ere de r´ eduire l’utilisation d’´ equipements ´ energivores
+et d’am´ eliorer la ventilation .
+16.2 Temp´ erature ´ elev´ ee en ´ et´ e
+Si la temp´ erature exc` ede 26 ℃pendant les mois d’´ et´ e (juin, juillet, aoˆ ut), il est recommand´ e de limiter
+l’utilisation des climatiseurs durant les heures les plus chaudes .
+16.3 Consommation nocturne anormale
+Si la consommation d’´ electricit´ e d´ epasse 100 kWh avant 6h du matin, il est conseill´ e d’ installer des
+syst` emes d’´ eclairage automatis´ es avec d´ etecteurs de pr´ esence .
+16.4 Bˆ atiment peu occup´ e mais ´ energivore
+Si l’occupation est inf´ erieure ` a 3 personnes et que la consommation d’´ electricit´ e d´ epasse 200 kWh, le
+syst` eme recommande de d´ econnecter les ´ equ
+ipements inutiles .
+16.5 Humidit´ e excessive
+Si l’humidit´ e relative d´ epasse 85 %, il est pr´ econis´ e d’ activer la ventilation naturelle ou d’utiliser
+un d´ eshumidificateur .
+16.6 Analyse par clusters
+L’analyse par clusters permet d’affiner les recommandations en fonction du profil ´ energ´ etique global :
+•Cluster 2 : Il est sugg´ er´ e d’optimiser les horaires d’utilisation pour mieux profiter des p´ eriodes
+creuses.
+•Cluster 3 : Une v´ erification des ´ equipements restant inutilement en veille est recommand´ ee.
+16.7 Bon comportement ´ energ´ etique
+Si aucune des conditions d’anomalie ci-dessus n’est remplie, un message positif est affich´ e pour encourager
+la poursuite des bonnes pratiques :
+Aucune action urgente. Bon comportement ´ energ´ etique.
+17 Conclusion
+Ce syst` eme of
+fre une approche proactive de la gestion ´ energ´ etique, en traduisant les donn´ ees techniques
+en recommandations simples et actionnables. Cela permet aux gestionnaires de bˆ atiments d’identifier
+rapidement les actions prioritaires pour r´ eduire durablement la consommation et l’empreinte carbone du
+campus
+10

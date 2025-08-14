@@ -1,0 +1,29 @@
+[server]
+# Optimiser les performances
+maxUploadSize = 200
+enableXsrfProtection = false
+enableCORS = false
+
+[browser]
+# Désactiver le rechargement automatique pour améliorer les performances
+gatherUsageStats = false
+
+[client]
+# Optimiser le cache
+caching = true
+displayEnabled = true
+
+[runner]
+# Optimiser l'exécution
+magicEnabled = false
+installTracer = false
+fixMatplotlib = false
+
+[theme]
+# Thème sombre avec couleurs bleues d'origine
+base = "dark"
+primaryColor = "#1f77b4"
+backgroundColor = "#205f86"
+secondaryBackgroundColor = "#181745"
+textColor = "#ffffffff"
+font = "sans serif"

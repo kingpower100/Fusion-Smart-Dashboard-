@@ -1,0 +1,13 @@
+streamlit
+pypdf
+pandas
+sentence-transformers
+faiss-cpu
+requests
+transformers
+peft
+datasets
+tiktoken
+python 
+sentencepiece
+tiktoken
