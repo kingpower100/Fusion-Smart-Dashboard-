@@ -47,5 +47,5 @@ Dans le cadre de l'optimisation énergétique du campus de l'IIIT Delhi, l'objec
 Cette classification permettra d’identifier les comportements propres à chaque profil et de mettre en place des stratégies ciblées de réduction et d'optimisation énergétique.
 
 ---
-
-
+Le projet exploite le jeu de données énergétique du campus IIIT Delhi, accompagné d’un article de recherche décrivant la méthodologie d’acquisition et les métriques principales. Sur la branche main, trois notebooks distincts assurent le traitement et l’analyse correspondant aux trois cibles du projet : prédiction de l’empreinte carbone, détection de surconsommations et classification des usages. Parallèlement, la branche dashboard regroupe l’interface Streamlit qui centralise les résultats, visualisations interactives et modules IA issus des notebooks. Cette organisation facilite la séparation entre la phase analytique (branche main) et la phase de présentation interactive (branche dashboard), tout en permettant une évolution indépendante de chaque composant.
+link : https://www.nature.com/articles/sdata201915
