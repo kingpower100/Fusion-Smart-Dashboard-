@@ -48,9 +48,4 @@ Cette classification permettra d’identifier les comportements propres à chaqu
 
 ---
 
-# 🚀 Démarrage de l'Application
 
-## **Option 1 : Démarrage Optimisé (Recommandé)**
-```bash
-# Précharger les modèles IA et démarrer avec optimisations
-python run_optimized.py
