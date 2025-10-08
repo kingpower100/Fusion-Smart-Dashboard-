@@ -1,6 +1,5 @@
 <img width="1918" height="943" alt="1" src="https://github.com/user-attachments/assets/3d6b59f7-7e45-4b04-891c-1a519a5dff62" /># 🚀 `app.py` - Application Principale - Fusion Smart Dashboard
 
-🚀 app.py – Main Application – Smart Energy Dashboard
 📋 Overview
 
 app.py is the core of the intelligent energy dashboard.
