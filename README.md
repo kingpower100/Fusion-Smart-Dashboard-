@@ -1,6 +1,14 @@
 🌱 Energy Carbon Intelligence – IIIT Delhi
 
 
+[![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.37%2B-FF4B4B.svg)](https://streamlit.io/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5%2B-F7931E.svg)](https://scikit-learn.org/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-2.1%2B-EB5E28.svg)](https://xgboost.ai/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16%2B-FF6F00.svg)](https://www.tensorflow.org/)
+[![Pandas/Numpy](https://img.shields.io/badge/Pandas%20%26%20NumPy-2.2%2B-150458.svg)](https://pandas.pydata.org/)
+[![Plotly](https://img.shields.io/badge/Plotly-5.24%2B-3F4F75.svg)](https://plotly.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
 
 
 
