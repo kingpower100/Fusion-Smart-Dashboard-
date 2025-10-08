@@ -8,6 +8,8 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16%2B-FF6F00.svg)](https://www.tensorflow.org/)
 [![Pandas/Numpy](https://img.shields.io/badge/Pandas%20%26%20NumPy-2.2%2B-150458.svg)](https://pandas.pydata.org/)
 [![Plotly](https://img.shields.io/badge/Plotly-5.24%2B-3F4F75.svg)](https://plotly.com/)
+[![Mistral AI](https://img.shields.io/badge/Mistral%20AI-7B%20%7C%208x7B-8000FF.svg)](https://mistral.ai/)
+[![RAG](https://img.shields.io/badge/RAG-Retrieval--Augmented%20Generation-6f42c1.svg)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
 
 
