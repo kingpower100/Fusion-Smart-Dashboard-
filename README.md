@@ -1,51 +1,127 @@
-# 🎯 Objectifs du Projet
+🌱 Energy Carbon Intelligence – IIIT Delhi
 
----
 
-## **TARGET 1 : Évaluation Intelligente de l'Empreinte Carbone**
-**Objectif**  
-Modéliser et prévoir l'évolution de l'empreinte carbone.
 
-**Description**  
-Développement d'un système capable de **modéliser et prévoir l'évolution de l'empreinte carbone** d'un bâtiment d'entreprise à partir de :
-- **Usages énergétiques** : consommation d'électricité, chauffage, refroidissement, etc.
-- **Conditions climatiques** : température, humidité, ensoleillement, précipitations, etc.
-- **Données contextuelles** : taux d'occupation, calendrier, événements spéciaux
 
-**Technologies utilisées**  
-- **Machine Learning** : modèles prédictifs avancés (RF, XGBoost, MLP, LSTM…)
-- **Analyse temporelle** : séquences temporelles et saisonnalité
-- **Intégration multi-sources** : fusion de données hétérogènes
-- **Prédictions en temps réel** : mise à jour continue des modèles
 
----
 
-## **TARGET 2 : Détection de Surconsommation Énergétique**
-**Objectif**  
-Détecter des situations de **surconsommation énergétique cachée**.
+🧠 Project Overview
 
-**Description**  
-Exploitation de modèles d'apprentissage non supervisé pour identifier des anomalies :
-- ✅ **Isolation Forest** : identification d'anomalies isolées
-- ✅ **DBSCAN** : détection de regroupements inhabituels
-- **Analyse des patterns** : mise en évidence de dérives énergétiques
-- **Alertes automatiques** : notifications des surconsommations détectées
+A complete data-driven and AI-powered framework for carbon footprint forecasting, energy overconsumption detection, and usage classification based on real-world energy datasets from the IIIT Delhi campus.
 
----
+Built with Python (ML/AI + Streamlit dashboard), this project integrates time-series modeling, anomaly detection, and behavioral classification to support sustainable energy management and intelligent carbon evaluation.
 
-## **TARGET 3 : Classification des Usages Énergétiques**
-**Objectif**  
-Classifier les usages énergétiques selon les profils utilisateurs.
+⚙️ Tech Stack
 
-**Description**  
-Dans le cadre de l'optimisation énergétique du campus de l'IIIT Delhi, l'objectif est de **classifier les usages énergétiques** des bâtiments en fonction des profils d'occupation :
-- **Étudiants** : consommation pendant les heures de cours
-- **Personnel administratif et technique** : usage pendant les heures de bureau
-- **Week-ends et périodes de faible activité** : consommation minimale
-- **Événements spéciaux** : pics de consommation exceptionnels
+Python 3.12+ • Streamlit • scikit-learn • XGBoost • TensorFlow • Pandas/Numpy • Plotly
 
-Cette classification permettra d’identifier les comportements propres à chaque profil et de mettre en place des stratégies ciblées de réduction et d'optimisation énergétique.
+Branches
 
----
-Le projet exploite le jeu de données énergétique du campus IIIT Delhi, accompagné d’un article de recherche décrivant la méthodologie d’acquisition et les métriques principales. Sur la branche main, trois notebooks distincts assurent le traitement et l’analyse correspondant aux trois cibles du projet : prédiction de l’empreinte carbone, détection de surconsommations et classification des usages. Parallèlement, la branche dashboard regroupe l’interface Streamlit qui centralise les résultats, visualisations interactives et modules IA issus des notebooks. Cette organisation facilite la séparation entre la phase analytique (branche main) et la phase de présentation interactive (branche dashboard), tout en permettant une évolution indépendante de chaque composant.
-link : https://www.nature.com/articles/sdata201915
+main → Data analysis, ML models, notebooks
+
+dashboard → Streamlit app (interactive visualization)
+
+🧩 Targets & Objectives
+🎯 TARGET 1 — Intelligent Carbon Footprint Evaluation
+
+Goal:
+Model and predict the evolution of a company building’s carbon footprint.
+
+Methods:
+
+Predictive ML models (Random Forest, XGBoost, MLP, LSTM)
+
+Time-series modeling (seasonality, temporal dependencies)
+
+Real-time updates with continuous learning
+
+⚡ TARGET 2 — Energy Overconsumption Detection
+
+Goal:
+Detect hidden energy overconsumption patterns.
+
+Methods:
+
+Unsupervised anomaly detection (Isolation Forest, DBSCAN)
+
+Behavioral pattern analysis & drift detection
+
+Automated alert system for detected anomalies
+
+👥 TARGET 3 — Energy Usage Classification
+
+Goal:
+Classify energy consumption by user profiles (students, staff, weekends, events).
+
+Methods:
+
+Temporal segmentation and clustering by occupancy
+
+Labeling consumption patterns for behavior profiling
+
+Adaptive recommendations for energy optimization
+
+🔬 Dataset
+
+Real-world energy management data from the IIIT Delhi campus.
+
+📄 Reference: A real-world energy management dataset of IIIT Delhi
+
+Published in Nature Scientific Data, 2019.
+
+⚙️ Installation
+# Clone the repository
+git clone https://github.com/<username>/energy-carbon-intelligence-iiitd.git
+cd energy-carbon-intelligence-iiitd
+
+# Create and activate virtual environment
+python -m venv .venv
+source .venv/bin/activate  # (Windows: .venv\Scripts\activate)
+
+# Install dependencies
+pip install -r requirements.txt
+
+🚀 Usage
+🧠 Train a model
+python -m src.eci.models.carbon_forecast --config configs/carbon_xgb.yaml
+
+📊 Run the Streamlit dashboard (branch dashboard)
+cd dashboard
+pip install -r requirements.txt
+streamlit run app.py
+
+📄 License
+
+This project is licensed under the MIT License — see the LICENSE
+ file for details.
+
+📞 Support
+
+For questions, issues, or collaboration requests:
+
+🐛 Create an issue in this repository
+
+💬 Contact the development team: louay.fgaier@supcom.tn
+
+📘 Check the individual README files in /notebooks and /dashboard for detailed documentation
+
+🎯 Future Enhancements
+
+🌍 Real-time Carbon Forecasting: live updates with retraining pipeline
+
+⚡ Energy Efficiency Recommendations: rule-based + AI-generated insights
+
+🔔 Anomaly Alerts: automated notifications for overconsumption events
+
+🧠 Reinforcement Learning: adaptive control for optimal consumption
+
+📊 Analytics Dashboard: multi-building CO₂ and consumption visualization
+
+☁️ API Deployment: FastAPI backend for model serving and external integration
+
+💡 About
+
+Energy Carbon Intelligence – Empowering Smart, Sustainable Buildings ♻️🏢✨
+
+Built with ❤️ using Python, Machine Learning, and Streamlit
+to make energy data intelligent, transparent, and actionable.
