@@ -1,60 +1,121 @@
 <img width="1918" height="943" alt="1" src="https://github.com/user-attachments/assets/3d6b59f7-7e45-4b04-891c-1a519a5dff62" /># 🚀 `app.py` - Application Principale - Fusion Smart Dashboard
 
-## 📋 **Vue d'Ensemble**
+🚀 app.py – Main Application – Smart Energy Dashboard
+📋 Overview
 
-**`app.py`** est le cœur de votre dashboard énergétique intelligent. Ce fichier central orchestre toutes les fonctionnalités et gère l'interface utilisateur Streamlit.
+app.py is the core of the intelligent energy dashboard.
+It orchestrates all functionalities and manages the Streamlit user interface, providing a seamless experience for exploring, analyzing, and interacting with your energy data.
 
-## 🎯 **Fonctionnalités Principales**
+🎯 Key Features
+🖥️ User Interface
 
-### **Interface Utilisateur**
-- ✅ **Navigation intuitive** avec sidebar personnalisée
-- ✅ **Thème sombre** avec couleurs bleues
-- ✅ **Responsive design** pour tous les écrans
-- ✅ **Navigation automatique** masquée
+✅ Intuitive navigation with a custom sidebar
+✅ Dark theme with blue highlights
+✅ Fully responsive layout for all screen sizes
+✅ Automatic navigation control (clean, minimalist UI)
 
-### **Pages Intégrées**
-1. **🏠 Accueil** - Vue d'ensemble avec météo en temps réel
-2. **🗺️ Carte CO₂** - Visualisation géographique interactive
-3. **📊 Recommandations** - Conseils IA basés sur les données
-4. **🧠 Simulateur Bayésien** - Modélisation probabiliste
-5. **🤖 Simulateur Multi-Agents** - Simulation comportementale
-6. **💬 Assistant IA** - Chat intelligent spécialisé énergie
-## 🎉 **Résumé**
+📄 Integrated Pages
 
-**`app.py`** est votre **hub central** qui :
-- 🎯 **Orchestre** toutes les fonctionnalités
-- 🎨 **Gère** l'interface utilisateur
-- 🔧 **Intègre** tous les composants
-- ⚡ **Optimise** les performances
-- 🚀 **Facilite** le développement
+🏠 Home – Real-time overview with weather data
+🗺️ CO₂ Map – Interactive geographical visualization
+📊 Recommendations – AI-driven energy insights
+🧠 Bayesian Simulator – Probabilistic modeling module
+🤖 Multi-Agent Simulator – Behavioral energy simulation
+💬 AI Assistant – Energy-focused intelligent chatbot
 
-**C'est le point d'entrée principal de votre dashboard énergétique intelligent !** 🚀✨
+🎉 Summary
 
-# 🤖 Energy Assistant Chatbot
+app.py serves as the central hub of the dashboard.
+It is responsible for:
 
-## Overview
-The Energy Assistant Chatbot is an AI-powered interface integrated into your Streamlit energy dashboard. It provides intelligent analysis and insights about your energy data, specifically designed to work with the `df_final_project3.csv` dataset.
+🎯 Orchestrating all major features
 
-## Features
+🎨 Managing the user interface and theme
 
-### 🧠 Intelligent Analysis
-- **Data Overview**: Get comprehensive statistics about your dataset
-- **Energy Consumption Analysis**: Analyze patterns, trends, and anomalies
-- **CO2 Emission Tracking**: Monitor environmental impact and sustainability metrics
-- **Building Performance**: Compare different buildings and systems
-- **Smart Recommendations**: AI-generated energy optimization suggestions
+🔧 Integrating all analytical modules
 
-### 📊 Interactive Visualizations
-- **Line Charts**: Time series analysis of energy consumption
-- **Bar Charts**: Building and system comparisons
-- **Heatmaps**: Correlation analysis between different metrics
-- **Real-time Data**: Dynamic charts based on your selections
+⚡ Optimizing performance
 
-### 💬 Natural Language Interface
-- Ask questions in plain English
-- Get contextual responses based on your data
-- Interactive conversation history
-- Quick action buttons for common queries
+🚀 Simplifying development and scalability
+
+🏗️ This is the main entry point of your Smart Energy Dashboard – where intelligence, design, and interactivity meet. ✨
+
+🤖 Energy Assistant Chatbot
+🧩 Overview
+
+The Energy Assistant Chatbot is an AI-powered conversational interface integrated within the Streamlit dashboard.
+It delivers intelligent, context-aware insights about energy data — specifically designed to interact with your dataset (df_final_project3.csv).
+
+🔍 Features
+🧠 Intelligent Analysis
+
+Data Overview: Statistical summary of your energy dataset
+
+Energy Consumption Analysis: Detects patterns, trends, and anomalies
+
+CO₂ Emission Tracking: Monitors environmental and sustainability metrics
+
+Building Performance: Compares performance across buildings/systems
+
+Smart Recommendations: AI-generated optimization strategies
+
+📊 Interactive Visualizations
+
+Line Charts: Time-series trends in energy consumption
+
+Bar Charts: Comparative visualizations by building or category
+
+Heatmaps: Correlation analysis between metrics
+
+Real-Time Data: Dynamically updated charts based on user selections
+
+💬 Natural Language Interface
+
+Ask questions in plain English
+
+Receive contextual, data-driven answers
+
+View interactive conversation history
+
+Use quick-action buttons for frequent queries
+
+⚙️ Integration
+
+The chatbot combines:
+
+🧩 RAG (Retrieval-Augmented Generation) – for context-based responses
+
+🤖 Mistral AI – lightweight open-source LLM for efficient reasoning
+
+🧠 Custom embeddings – fine-tuned on energy datasets
+
+💾 LangChain / FAISS – for semantic search and data retrieval
+
+🌱 Purpose
+
+This chatbot transforms your dashboard into an interactive, explainable AI platform, helping users:
+
+Understand their energy consumption intuitively
+
+Generate actionable sustainability insights
+
+Explore data conversationally instead of through static charts
+
+🧭 Example Queries
+"Show me the building with the highest CO₂ emissions last month."
+"Compare energy usage between weekday and weekend."
+"How did total consumption change during summer?"
+"Give me suggestions to reduce electricity usage by 20%."
+
+📄 License
+
+This dashboard is licensed under the MIT License — see the LICENSE
+ file for details.
+
+💡 Energy Carbon Intelligence – Smart, Sustainable, and Explainable ⚡🏢♻️
+
+Built with ❤️ using Streamlit, Python, and Mistral + RAG AI
+to make energy data intelligent, interactive, and actionable.
 ------
 
 ------
