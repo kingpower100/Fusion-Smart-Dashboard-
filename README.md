@@ -81,7 +81,7 @@ Published in Nature Scientific Data, 2019.
 
 ⚙️ Installation
 # Clone the repository
-git clone https://github.com/<username>/energy-carbon-intelligence-iiitd.git
+git clone [https://github.com/<username>/energy-carbon-intelligence-iiitd.git](https://github.com/kingpower100/Fusion-Smart-Dashboard-.git)
 cd energy-carbon-intelligence-iiitd
 
 # Create and activate virtual environment
@@ -100,12 +100,12 @@ cd dashboard
 pip install -r requirements.txt
 streamlit run app.py
 
-📄 License
+## 📄 License
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute this software for personal or commercial purposes —  
+see the [LICENSE](./LICENSE) file for full details.
 
-This project is licensed under the MIT License — see the LICENSE
- file for details.
-
-📞 Support
+## 📞 Support
 
 For questions, issues, or collaboration requests:
 
@@ -129,7 +129,7 @@ For questions, issues, or collaboration requests:
 
 ☁️ API Deployment: FastAPI backend for model serving and external integration
 
-💡 About
+## 💡 About
 
 Energy Carbon Intelligence – Empowering Smart, Sustainable Buildings ♻️🏢✨
 
